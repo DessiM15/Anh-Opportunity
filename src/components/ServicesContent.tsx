@@ -58,9 +58,16 @@ export default function ServicesContent() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-navy relative">
+      <section className="pt-32 pb-20 bg-navy relative overflow-hidden">
+        {/* City background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920&h=800&fit=crop')" }}
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-navy/85" />
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               Comprehensive Financial Services
