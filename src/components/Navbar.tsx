@@ -17,10 +17,10 @@ export default function Navbar() {
   return (
     <nav
       aria-label="Main navigation"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-dark-navy/95 backdrop-blur-md shadow-lg"
-          : "bg-dark-navy/70 backdrop-blur-sm"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,9 +30,9 @@ export default function Navbar() {
             <Image
               src="/assets/doan-fs-logo.png"
               alt="Doan Financial Services - insurance agency partnership and financial advisory firm"
-              width={220}
-              height={70}
-              className="h-16 md:h-20 w-auto"
+              width={280}
+              height={90}
+              className="h-20 md:h-24 w-auto"
               priority
             />
           </Link>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="md:hidden pb-4 border-t border-white/10">
+          <div className={`md:hidden pb-4 border-t border-white/10 ${scrolled ? "" : "bg-dark-navy/90 backdrop-blur-md rounded-b-lg -mx-4 px-4"}`}>
             <div className="flex flex-col gap-3 pt-4">
               <Link
                 href="/"
