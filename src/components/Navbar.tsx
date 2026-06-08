@@ -30,9 +30,9 @@ export default function Navbar() {
             <Image
               src="/assets/doan-fs-logo.png"
               alt="Doan Financial Services - insurance agency partnership and financial advisory firm"
-              width={140}
-              height={45}
-              className="h-10 md:h-12 w-auto"
+              width={180}
+              height={58}
+              className="h-14 md:h-16 w-auto"
               priority
             />
           </Link>
