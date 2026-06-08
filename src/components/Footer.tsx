@@ -13,9 +13,9 @@ export default function Footer() {
             <Image
               src="/assets/doan-fs-logo.png"
               alt="Doan Financial Services"
-              width={200}
-              height={64}
-              className="h-16 w-auto"
+              width={240}
+              height={76}
+              className="h-20 w-auto"
             />
             <div className="flex items-center gap-3">
               <Image

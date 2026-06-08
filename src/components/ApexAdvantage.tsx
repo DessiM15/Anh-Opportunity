@@ -71,9 +71,9 @@ export default function ApexAdvantage() {
               <Image
                 src="/assets/doan-fs-logo.png"
                 alt="Doan Financial Services"
-                width={400}
-                height={130}
-                className="w-72 md:w-96 opacity-20"
+                width={500}
+                height={160}
+                className="w-80 md:w-[28rem] opacity-20"
               />
             </div>
           </ScrollReveal>
