@@ -11,11 +11,11 @@ export default function BlogInsights() {
   const [expandedPost, setExpandedPost] = useState<string | null>(null);
 
   return (
-    <section id="insights" className="py-20 md:py-28 bg-light-gray">
+    <section id="insights" aria-labelledby="insights-heading" className="py-20 md:py-28 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
+            <h2 id="insights-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
               Industry Insights
             </h2>
             <p className="mt-4 text-navy/70 text-lg">
@@ -32,10 +32,11 @@ export default function BlogInsights() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.thumbnail}
-                    alt={post.title}
+                    alt={`${post.title} - insurance and financial services insight by ${post.author}`}
                     width={400}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                     unoptimized
                   />
                 </div>

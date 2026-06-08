@@ -5,14 +5,16 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+      {/* Video Background — preload metadata only for faster initial paint */}
       <video
         autoPlay
         muted
         loop
         playsInline
+        preload="metadata"
         poster="/assets/hero-thumbnail.jpg"
         className="absolute inset-0 w-full h-full object-cover"
+        aria-hidden="true"
       >
         <source src="/assets/hero-video.mp4" type="video/mp4" />
       </video>

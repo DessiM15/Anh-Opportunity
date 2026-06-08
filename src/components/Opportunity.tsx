@@ -32,11 +32,11 @@ const stats = [
 
 export default function Opportunity() {
   return (
-    <section id="opportunity" className="py-20 md:py-28 bg-white">
+    <section id="opportunity" aria-labelledby="opportunity-heading" className="py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
+            <h2 id="opportunity-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
               The Insurance & Financial Services Industry
             </h2>
             <p className="mt-4 text-navy/70 text-lg">

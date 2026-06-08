@@ -15,7 +15,7 @@ export default function AboutAnh() {
                 <div className="absolute -inset-3 border-2 border-gold/30 rounded-xl" />
                 <Image
                   src="/assets/anh-photo.png"
-                  alt="Anh Doan"
+                  alt="Anh Doan - Founder of Doan Financial Services, risk management and business advisory specialist in Sugar Land TX"
                   width={400}
                   height={500}
                   className="rounded-xl relative z-10 w-72 md:w-96 h-auto"

@@ -44,11 +44,11 @@ const valueProps = [
 
 export default function WhyCollaborate() {
   return (
-    <section className="py-20 md:py-28 bg-light-gray">
+    <section aria-labelledby="why-partner-heading" className="py-20 md:py-28 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
+            <h2 id="why-partner-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy">
               Why Partner With Us
             </h2>
             <p className="mt-4 text-navy/70 text-lg">

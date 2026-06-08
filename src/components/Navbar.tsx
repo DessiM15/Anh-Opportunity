@@ -16,6 +16,7 @@ export default function Navbar() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-dark-navy/95 backdrop-blur-md shadow-lg"
@@ -28,10 +29,11 @@ export default function Navbar() {
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/assets/doan-fs-logo.png"
-              alt="Doan Financial Services"
+              alt="Doan Financial Services - insurance agency partnership and financial advisory firm"
               width={140}
               height={45}
               className="h-10 md:h-12 w-auto"
+              priority
             />
           </Link>
 
